@@ -1,6 +1,6 @@
 #create Projet Solution   
 
-**from cli powershell** you asbolutely must do in admin :  
+Run the following command in **PowerShell** as Administrator :  
 ```shell
 dotnet new sln -n PhotoExplorer
 ```  
