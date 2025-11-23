@@ -1,0 +1,29 @@
+﻿@* @attribute [StreamRendering(true)] // stream les données au fur et à mesure qu'elles arrivent *@
+
+@if(_photos is null)
+{
+	<div class="d-flex align-items-center justify-content-center">
+			<h1>chargement...</h1>
+
+	</div>
+}
+else
+{
+	<div class="row">
+		@foreach (var photo in _photos)
+		{
+			<div class="col m-2">
+				<div class="card shadow" style="width: 18rem;">
+					<img src="https://localhost:7198/photos/@photo.Path" class="card-img-top" alt="@photo.Description">
+					<div class="card-body">
+						<h5 class="card-title">@photo.Description</h5>
+						<p class="card-text">
+							@photo.Author
+						</p>
+					</div>
+				</div>
+			</div>
+		}
+
+	</div>
+}

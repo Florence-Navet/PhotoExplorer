@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{8F0AF71B-26F9-4CD2-A5B6-ED40A77690B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoExplorer.Api", "PhotoExplorer.Api\PhotoExplorer.Api.csproj", "{018AB862-2151-403E-FCA2-2BFFD5533455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoExplorer.Manager", "PhotoExplorer.Manager\PhotoExplorer.Manager.csproj", "{2F223382-99CE-4878-8670-F7E8885540F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{0AD63DE8-9C8C-438F-8D71-341D3FA6214C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoExplorer.Components", "PhotoExplorer.Components\PhotoExplorer.Components.csproj", "{285AA657-F464-4D3D-878C-8C042D3E4149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoExplorer.Explorer", "PhotoExplorer.Explorer\PhotoExplorer.Explorer.csproj", "{3E2D1148-E976-42E9-98D5-FE86782F8B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoExplorer.Mobile", "PhotoExplorer.Mobile\PhotoExplorer.Mobile.csproj", "{117F3D55-2CF9-4AD9-ABE7-66B05238D6E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{018AB862-2151-403E-FCA2-2BFFD5533455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018AB862-2151-403E-FCA2-2BFFD5533455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018AB862-2151-403E-FCA2-2BFFD5533455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018AB862-2151-403E-FCA2-2BFFD5533455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F223382-99CE-4878-8670-F7E8885540F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F223382-99CE-4878-8670-F7E8885540F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F223382-99CE-4878-8670-F7E8885540F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F223382-99CE-4878-8670-F7E8885540F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285AA657-F464-4D3D-878C-8C042D3E4149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285AA657-F464-4D3D-878C-8C042D3E4149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285AA657-F464-4D3D-878C-8C042D3E4149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285AA657-F464-4D3D-878C-8C042D3E4149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2D1148-E976-42E9-98D5-FE86782F8B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2D1148-E976-42E9-98D5-FE86782F8B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2D1148-E976-42E9-98D5-FE86782F8B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2D1148-E976-42E9-98D5-FE86782F8B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117F3D55-2CF9-4AD9-ABE7-66B05238D6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117F3D55-2CF9-4AD9-ABE7-66B05238D6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117F3D55-2CF9-4AD9-ABE7-66B05238D6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117F3D55-2CF9-4AD9-ABE7-66B05238D6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{018AB862-2151-403E-FCA2-2BFFD5533455} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2F223382-99CE-4878-8670-F7E8885540F6} = {8F0AF71B-26F9-4CD2-A5B6-ED40A77690B0}
+		{285AA657-F464-4D3D-878C-8C042D3E4149} = {0AD63DE8-9C8C-438F-8D71-341D3FA6214C}
+		{3E2D1148-E976-42E9-98D5-FE86782F8B5D} = {8F0AF71B-26F9-4CD2-A5B6-ED40A77690B0}
+		{117F3D55-2CF9-4AD9-ABE7-66B05238D6E3} = {8F0AF71B-26F9-4CD2-A5B6-ED40A77690B0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0B4A05B-2394-4B49-981F-F691DE237769}
+	EndGlobalSection
+EndGlobal
