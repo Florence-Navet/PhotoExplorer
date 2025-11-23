@@ -2,5 +2,5 @@
 
 Run the following command in ***PowerShell*** as Administrator :  
 ```shell
-dotnet new sln -n PhotoExplorer
+dotnet new sln -n solutionName
 ```  
