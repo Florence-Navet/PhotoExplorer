@@ -25,7 +25,7 @@ app.UseCors(p =>
     p.AllowAnyHeader()
     .AllowAnyMethod()
     .AllowCredentials()
-    .WithOrigins("http://localhost:1234");  // TODO définir l'URL de l'application WASM
+    .WithOrigins("http://localhost:5222");  // TODO définir l'URL de l'application WASM  "http://localhost:5222" pour WASM
 });
 
 app.UseStaticFiles();
