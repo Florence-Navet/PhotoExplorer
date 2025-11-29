@@ -1,10 +1,19 @@
+using PhotoExplorer.Components.Services;
 using PhotoExplorer.Manager.Components;
+using PhotoExplorer.Manager.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("api", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7198/");
+});
+builder.Services.AddScoped<IPhotoService, ServerPhotoService>();
 
 var app = builder.Build();
 

@@ -10,6 +10,9 @@
 else
 {
 	<div class="row">
+		@if(_photos.Count > 0)
+		{
+			
 		@foreach (var photo in _photos)
 		{
 			<div class="col m-2">
@@ -22,6 +25,14 @@ else
 						</p>
 					</div>
 				</div>
+			</div>
+		}
+		}
+		else
+		{
+			<div class="d-flex align-items-center justify-content-center">
+			<h1>Aucune photo  récupérée depuis l'API.</h1>
+
 			</div>
 		}
 
