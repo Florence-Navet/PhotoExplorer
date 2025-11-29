@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using PhotoExplorer.Components.Services;
+using PhotoExplorer.Explorer.Services;
 
 namespace PhotoExplorer.Mobile
 {
@@ -20,6 +22,8 @@ namespace PhotoExplorer.Mobile
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddScoped<IPhotoService, HybridPhotoService>();
+            builder.Services.AddScoped<HttpClient>(_ => new HttpClient());
 
             return builder.Build();
         }
