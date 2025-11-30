@@ -13,6 +13,13 @@ public class ServerPhotoService : IPhotoService
         this.factory = factory;
     }
 
+    public async Task<Photo?> GetPhotoById(string id)
+    {
+        using var httpClient = factory.CreateClient("api");
+        var result = await httpClient.GetFromJsonAsync<Photo?>("photos/" + id);
+        return result;
+    }
+
     public async Task<List<Photo>?> GetPhotosFromApi()
     {
         using var httpClient = factory.CreateClient("api");

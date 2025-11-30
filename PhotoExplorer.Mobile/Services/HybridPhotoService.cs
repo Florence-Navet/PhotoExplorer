@@ -13,6 +13,12 @@ public class HybridPhotoService : IPhotoService
     {
         this.client = client;
     }
+
+    public Task<Photo?> GetPhotoById(string id)
+    {
+        return client.GetFromJsonAsync<Photo?>("https://localhost:7198/photos" + id);
+    }
+
     public Task<List<Photo>?> GetPhotosFromApi()
     {
         return client.GetFromJsonAsync<List<Photo>>("https://localhost:7198/photos");

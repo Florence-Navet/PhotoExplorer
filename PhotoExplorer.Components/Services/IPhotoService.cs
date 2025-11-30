@@ -10,4 +10,5 @@ namespace PhotoExplorer.Components.Services;
 public interface IPhotoService
 {
     Task<List<Photo>?> GetPhotosFromApi();
+    Task<Photo?> GetPhotoById(string id);
 }

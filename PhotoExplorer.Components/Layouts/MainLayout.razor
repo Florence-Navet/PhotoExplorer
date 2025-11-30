@@ -1,10 +1,25 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
 
 <nav class="navbar mb-5 shadow">
     <div class="row">
         <a class="navbar-brand" href="/">
             <img src="_content/PhotoExplorer.Components/images/logo.png" height="120">
         </a>
+        <span class="app-title">
+            Photo Explorer
+            @if(Navigation.GetType().AssemblyQualifiedName!.Contains("Server",
+            StringComparison.OrdinalIgnoreCase))
+            {
+                <text>Manager</text>
+            }
+            else if (Navigation.GetType().AssemblyQualifiedName!.Contains("WebView",
+            StringComparison.OrdinalIgnoreCase))
+            {
+                <text>Mobile</text>
+            }
+            
+        </span>
     </div>
 </nav>
 
