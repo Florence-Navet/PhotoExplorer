@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Components;
 using PhotoExplorer.Components.Models;
 using PhotoExplorer.Components.Services;
+using System;
+using System.Linq;
 using System.Net.Http.Json;
 
 
@@ -11,6 +13,8 @@ public partial class PhotoList
 {
 
     [Inject] private IPhotoService PhotoService { get; set; } = default!;
+
+    [Inject] private NavigationManager Navigation { get; set; } = default!;
 
     private List<Photo>? _photos;
 
@@ -40,5 +44,13 @@ public partial class PhotoList
     }
 
 
+    private void ShowDetails(string photoId)
+    {
+        if (Navigation.GetType().AssemblyQualifiedName!.Contains("WebAssembly",
+            StringComparison.OrdinalIgnoreCase))
+        {
+            Navigation.NavigateTo("/photo/" + photoId);
 
+        }
+    }
 }

@@ -1,0 +1,32 @@
+﻿@page  "/photo/{id}"
+
+<h3>Details</h3>
+
+@if(_error)
+{
+	<h1>une erreur est survenue</h1>
+	<a href="/">Retourner à l'index</a>
+
+}
+else
+{
+	
+	if(_photo is null)
+	{
+		<h1>Chargement....</h1>
+	}
+	else
+	{
+		<div class="card" syle="height: 80vh;">
+			<img src="https://localhost:7198/photos/@_photo.Path" class="card-img-top img-fluid"
+			alt="@_photo.Description" />
+			<div class="card-body text-center">
+				<h5 class="card-title">@_photo.Author</h5>
+				<p class="card-text">@_photo.Description</p>
+			</div>
+		</div>
+
+	}
+}
+
+
